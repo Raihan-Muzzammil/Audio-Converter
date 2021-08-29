@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+<title>HTML Basics</title> 
+<body>
+
+<h1>Hello</h1>
+<p>Today we are gonna be learning how to make a (somewhat good) <b>webpage</b> with your notepad and keyboard.</p>
+
+<h1>Step: 1 (Declaring your Document)</h1>
+<p>Open Notepad and begin by typing <b>"<code>&lt;!DOCTYPE html&gt;</code>"</b>.</p>
+<p>Typing this declares your document as a <b>HTML Document.</b> </p>
+
+<h1>Step: 2 (Starting up)</h1>
+<p>There are certain <b>Keywords</b> or <b>Tags</b> which are important for just basic display</p>
+<p>A HTML document always begins with "<b><code>&lt;html&gt;</code></b>" and ends with <b>"<code>&lt;/html&gt;</code>"</b>.
+Note that I use a <b>forward slash</b> which denotes that its the end. You will use it more often when making a webpage.</p>
+
+<h1>Step: 3 (Giving the Webpage a Body)</h1>
+<p>This is the part where the <b>magic</b> happens.</p>
+<p>After typing "<b><code>&lt;html&gt;</code></b>" type "<b><code>&lt;body&gt;</code></b>". When you do this you essentially start making your main display for your webpage.
+<br> Just like <b>"<code>&lt;html&gt;</code>"</b> and <b>"<code>&lt;/html&gt;</code>"</b> you start your webpage's content with <b>"<code>&lt;body&gt;</code>"</b> and end with <b>"<code>&lt;/body&gt;</code>"</b>.</p>
+<p>Note: Anything between the tags <b>"<code>&lt;body&gt;</code>"</b> and <b>"<code>&lt;/body&gt;</code>"</b> will appear on your browser.  </p>
+
+<h1>Step: 4 (Giving the body some soul)</h1>
+<p>Now that you have started with the body, time to add a little info and everything else that you want to. </p>
+<p>This part is what will appear on your Web Browser , So the main focus will be on this part.</p>
+<p>Let's look at the basic tags.</p>
+  
+  <h3>The Heading : </h3>
+  <p>To add a heading type <b>"<code>&lt;h1&gt;</code>"</b> and end with <b>"<code>&lt;/h1&gt;</code>." </b>The <b>"1"</b> in <b>"h1"</b> denotes the main heading and also determines the size of the heading. </p>
+  <p>The <b>Higher</b> the Number the <b>smaller</b> the size.</p>
+  
+  <h3>The Paragraph : </h3>
+  <p>When you have a heading , there should be some information below it. So we categorize them into paragraphs.</p>
+  <p>To begin a Paragraph we type <b>"<code>&lt;p&gt;</code>"</b> and end the paragraph with <b>"<code>&lt;/p&gt;</code>.</b>".</p>
+  <p>Remember that whenever you want to close a tag you have to add "/" and type the tag name you began with.
+  <br> Example : "<code>&lt;p&gt;</code>" and "<code>&lt;/p&gt;</code>".</p>
+  <p>You can use<b>"<code>&lt;br&gt;</code>"</b> to break and start from a new line in the <b>same paragraph</b>
+  <br> You can also use <b>"<code>&lt;b&gt;</code>"</b> at the start and <b>"<code>&lt;/b&gt;</code>"</b> at the end to bold the <b>letters</b> or a <b>sentence</b>.
+  
+  <h2>The Decorations : </h2>
+  <p>Now that we know to make a webpage , you can go ahead and write stories if you want to.
+  <br>But its still missing the decorations and fancy stuff to make it look <b>beautiful</b>. </p>
+  <p>Therefore lets start by adding decorations like : </p>
+
+  <h3>Links : </h3>
+  <p> Links can allow you to share some other webpages that you might like or some image that you were amazed by.</p>
+  <p>And for no reason , here is a picture of a <a href=https://images2.minutemediacdn.com/image/upload/c_crop,h_1414,w_2101,x_20,y_0/v1565279671/shape/mentalfloss/578211-gettyimages-542930526.jpg?itok=Le7nMAZH>cat</a>.</p>
+  <p>To hyperlink a link to a word or sentence simply type the tag "<code>&lt;a href=&gt;</code>" followed by your word or sentence and then end with <b>"<code>&lt;/a&gt;</code></b>."</p>
+
+  <h3>Images : </h3>
+  <p>A Web Page becomes <b>colourful</b> when you add an image or two to it or atleast thats what I believe.
+  <br>So here is another image of a <b>cat</b>
+  <br><img src="ket.jpg" alt="ket" width="1920" height="1080"></p>
+  <p>That's Better.</p>
+  <p>To add an image type the tag <b>"<code>&lt;img src="(file name)" alt="(alternative file name)" width="(width)" height="(height)"&gt;</code>"</b></p>
+
+  <h3>Buttons : </h3>
+  <p>People like <b>clicking</b> on things that look like they want to be <b>clicked</b>.
+  <br><b>Buttons</b> look like they want to be <b>clicked</b> and hence invite people to <b>click</b>.</p>
+  <p>Therefore lets make a button which does <b>absolutely nothing</b>.</p>
+  <p><button> <b>Does Nothing</b></button></p>
+  <p>To make a button type the Tag <b>"<code>&lt;button&gt;</code>"</b> followed by the text to be represented on the button and end it with <b>"<code>&lt;/button&gt;</code>"</b>.</p>
+  <p><br><br>These are some of the many ways you can decorate your webpage.</p>
+  
+
+<h1>Step: 5 (Packing up)</h1>
+<p>After you are done with the body of your webpage be sure to use the tag <b>"<code>&lt;/body&gt;</code>"</b> and <b>"<code>&lt;/html&gt;</code>"</b> to complete your webpage. </p>
+<p>Then use Ctrl+Shift+S to save your file as <b>.htm</b> or <b>html</b> file (it doesn't matter which one) and the encoding as <b>UTF-8</b> since that is widely used for HTML Documents </p>  
+
+
+<p>These are just the super basic tags and commands for a generic webpage and there's lot more to learn but for now its....</p>
+<h1>The End</h1>
+
+</body>
+{% endblock %}
