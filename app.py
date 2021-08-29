@@ -5,6 +5,7 @@ import subprocess as sp
 FFMPEG = "C:\\ffmpeg\\bin\\ffmpeg.exe"
 app = Flask(__name__)
 
+
 @app.route("/")
 def home():
     return render_template("Index.html")
@@ -25,19 +26,14 @@ def generate():
     inp = os.path.join(app.instance_path, 'uploads', filename)
     out = os.path.join(app.instance_path, 'downloads', dfile)
     convertcmd = [FFMPEG, '-i', inp, '-y', out]
-    downl = sp.Popen(convertcmd,shell=True)
-    try:
-        outs, errs = downl.communicate(timeout=10)
-    except TimeoutError_:
-        proc.kill()
+    sp.Popen(convertcmd, shell=True)
     return render_template("Download.html")
-
 
 
 @app.route("/download")
 def change():
-    ddir = os.path.join(current_app.root_path, app.instance_path, 'downloads')
-    return send_from_directory(directory=ddir, path="instance\\downloads", filename=dfile, as_attachment=True)
+    downdir = os.path.join(current_app.root_path, app.instance_path, 'downloads')
+    return send_from_directory(directory=downdir, path="instance\\downloads", filename=dfile, as_attachment=True)
 
 
 @app.route("/random")

@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 {% block title %}Audio Converter{% endblock %}
 {% block  content  %}
+    <!--suppress HtmlUnknownTarget, HtmlDeprecatedAttribute -->
     <h2 align="center">Audio Converter || .M4A --> .WAV</h2>
     <form action = "/m4atowav" method="post" enctype = "multipart/form-data">
         <p align="center"> Choose your .m4a file to convert to .wav : </p>
-        <p align="center"><input type="file" name="audio" accept="audio/mpeg4-generic" required="required"/></p>
+        <p align="center"><input type="file" name="audio" accept=".m4a" required="required"/></p>
         <p align="center"><input type="submit" value="Convert"/></p>
     </form>
 {% endblock %}
